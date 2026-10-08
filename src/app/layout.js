@@ -3,6 +3,7 @@ import Script from "next/script";
 import BottomNav from "@/components/BottomNav";
 import { SCRIPT_PREFERENCIAS } from "@/lib/preferencias";
 import "./globals.css";
+import { GlobalLoader } from "@/components/loaders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
         </a>
         {children}
         <BottomNav />
+        <GlobalLoader />  
       </body>
     </html>
   );
